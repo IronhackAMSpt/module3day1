@@ -8,6 +8,8 @@ import Dogs from "./Dogs";
 import ReactPlayer from "react-player";
 import Slider from "react-slick";
 
+import CatContainer from "./CatContainer"
+
 
 class App extends Component {
 
@@ -36,14 +38,9 @@ class App extends Component {
 
         return (
             <div>
-                 <Slider {...settings}>
-                    <div>
-                        <img src={cat.avatar} />
-                    </div>
-                    <div>
-                        <img src={cat2.avatar} />
-                    </div>
-                 </Slider>
+                 <CatContainer style="red" name="jorg" />
+
+
                 <h1>hello class</h1>
                 <Cats cat={cat}/>
                 <Cats cat={cat2}/>
